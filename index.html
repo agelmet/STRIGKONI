@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All Smiles Dental Clinic | Άννα Στριγκόνη — Χειρουργός Οδοντίατρος, Παλαιό Φάληρο</title>
+<title>All Smiles Dental Clinic | Άννα Στριγκόνη — Οδοντίατρος, Παλαιό Φάληρο</title>
 <meta name="description" content="Σύγχρονο οδοντιατρείο στο Παλαιό Φάληρο. Η Άννα Στριγκόνη, MSc Προσθετικής ΕΚΠΑ, εξειδικεύεται στην Προσθετική, την Αισθητική Οδοντιατρική, τις επιεμφυτευματικές αποκαταστάσεις και τη διαχείριση βρυγμού. Ψηφιακή αποτύπωση με ενδοστοματικό σαρωτή.">
 <meta property="og:title" content="All Smiles Dental Clinic | Άννα Στριγκόνη">
 <meta property="og:description" content="Προσθετική · Αισθητική Οδοντιατρική · Επιεμφυτευματικές Αποκαταστάσεις · Ψηφιακή Οδοντιατρική — Τρίτωνος 111, Παλαιό Φάληρο.">
@@ -26,7 +26,7 @@
   --gold-bright:#C9A35C;
   --gold-pale:#E9DCC2;
   
-  /* WOW Factor: Added Dental Colors */
+  /* Added Dental Colors */
   --dental-teal: #0D9488;
   --dental-blue: #0284C7;
   --dental-glow: 0 15px 35px -5px rgba(13, 148, 136, 0.3);
@@ -134,7 +134,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 }
 .btn-line{border-color:rgba(43,37,30,.25);color:var(--ink);background:transparent}
 .btn-line:hover{border-color:var(--dental-blue);color:var(--dental-blue); box-shadow:var(--dental-glow);}
-.btn-ivory{background:var(--ivory);color:var(--ink)}
+.btn-ivory{background:var(--ivory);color(--ink)}
 .btn-ivory:hover{background:var(--dental-teal);color:#fff;transform:translateY(-2px); box-shadow:var(--dental-glow);}
 .nav-cta{display:inline-flex}
 .burger{display:none;background:none;border:0;cursor:pointer;width:42px;height:42px;position:relative;z-index:210}
@@ -157,7 +157,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 .hero{
   position:relative;min-height:100svh;display:flex;align-items:center;
   background:var(--ivory);overflow:hidden;
-  justify-content:flex-start; /* Ensure left alignment */
+  justify-content:flex-start;
 }
 .hero-media{position:absolute;top:0;right:0;bottom:0;width:55%;z-index:1}
 .hero-media img{
@@ -169,7 +169,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 .hero-inner{
   position:relative;z-index:2;padding-top:120px;padding-bottom:90px;
   max-width:650px;
-  margin-left:0; /* Explicitly far left */
+  margin-left:0;
   text-align:left;
 }
 .hero h1{font-size:clamp(38px,5.4vw,66px);color:var(--ink); line-height:1.1;}
@@ -209,7 +209,6 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(36px,5.5vw,76px);align-items:center}
 .about-img{position:relative; animation: float 6s ease-in-out infinite;}
-/* Description Image Changed */
 .about-img img{border-radius:var(--radius);box-shadow:var(--dental-glow);aspect-ratio:4/4.6;object-fit:cover;width:100%; border: 3px solid #fff;}
 .about-img::before{
   content:"";position:absolute;inset:-22px auto auto -22px;width:62%;height:62%;
@@ -377,7 +376,6 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 .footer{background:var(--ink);color:rgba(251,248,242,.65);padding:60px 0 30px; position: relative;}
 .footer::before{content: ""; position: absolute; top:0; left:0; right:0; height:4px; background: linear-gradient(90deg, var(--dental-blue), var(--dental-teal), var(--gold));}
 .ft-grid{display:flex;justify-content:space-between;gap:34px;flex-wrap:wrap;align-items:flex-start}
-/* BIGGER CIRCLED FOOTER LOGO */
 .ft-brand img{height:90px;width:90px;border-radius:50%;object-fit:cover;background:var(--ivory);padding:4px; border:2px solid var(--dental-teal); box-shadow: 0 0 15px rgba(13,148,136,0.5);}
 .ft-brand p{margin-top:16px;font-size:13.5px;max-width:300px; line-height:1.8;}
 .ft-col b{display:block;color:var(--dental-teal);font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px}
@@ -418,17 +416,18 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 </head>
 <body>
 
+<!-- NAV -->
 <header class="nav" id="nav">
   <div class="container nav-inner">
     <a href="#top" class="nav-logo" aria-label="All Smiles Dental Clinic — Αρχική">
       <img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-18.jpg" alt="All Smiles Dental Clinic">
     </a>
     <nav class="nav-links" aria-label="Κύριο μενού">
-      <a href="#iatros">Η Ιατρός</a>
+      <a href="#iatros">Η Οδοντίατρος</a>
       <a href="#ypiresies">Υπηρεσίες</a>
       <a href="#psifiaki">Ψηφιακή Οδοντιατρική</a>
       <a href="#xoros">Ο Χώρος</a>
-      <a href="#kritikes">Κριτικές</a>
+      <a href="#axiologiseis">Αξιολογήσεις</a>
       <a href="#epikoinonia">Επικοινωνία</a>
     </nav>
     <a class="btn btn-gold nav-cta" href="tel:+302109828316">
@@ -442,24 +441,25 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#iatros">Η Ιατρός</a>
+  <a href="#iatros">Η Οδοντίατρος</a>
   <a href="#ypiresies">Υπηρεσίες</a>
   <a href="#psifiaki">Ψηφιακή Οδοντιατρική</a>
   <a href="#xoros">Ο Χώρος</a>
-  <a href="#kritikes">Κριτικές</a>
+  <a href="#axiologiseis">Αξιολογήσεις</a>
   <a href="#epikoinonia">Επικοινωνία</a>
   <a class="btn btn-gold" href="tel:+302109828316">Κλήση: 21 0982 8316</a>
 </div>
 
 <main id="top">
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-media" aria-hidden="true">
     <img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-15.jpg" alt="">
   </div>
   <div class="container" style="width: 100%;">
     <div class="hero-inner">
-      <span class="eyebrow reveal">Χειρουργός Οδοντίατρος · MSc Προσθετικής ΕΚΠΑ</span>
+      <span class="eyebrow reveal">Οδοντίατρος · MSc Προσθετικής ΕΚΠΑ</span>
       <h1 class="reveal d1">Το χαμόγελό σας,<br>σχεδιασμένο με <em>επιστήμη</em><br>και αισθητική.</h1>
       <svg class="arc arc-teal reveal d1" viewBox="0 0 64 18" aria-hidden="true"><path d="M2 3 C 18 17, 46 17, 62 3"/></svg>
       <p class="hero-sub reveal d2">Η Άννα Στριγκόνη σάς υποδέχεται στο All Smiles Dental Clinic στο Παλαιό Φάληρο — ένα σύγχρονο ιατρείο όπου η εξειδίκευση στην Προσθετική συναντά την ψηφιακή οδοντιατρική, χωρίς άγχος και χωρίς ταλαιπωρία.</p>
@@ -476,8 +476,8 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
           <span class="trust-label"><span class="stars">★★★★★</span><br>doctoranytime</span>
         </div>
         <div class="trust-item">
-          <span class="trust-num">45+</span>
-          <span class="trust-label">Εξαιρετικές<br>συστάσεις ασθενών</span>
+          <span class="trust-num">100%</span>
+          <span class="trust-label">ΕΞΑΤΟΜΙΚΕΥΜΕΝΗ<br>ΦΡΟΝΤΙΔΑ</span>
         </div>
         <div class="trust-item">
           <span class="trust-num">ΕΚΠΑ</span>
@@ -488,6 +488,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   </div>
 </section>
 
+<!-- STRIP -->
 <div class="strip" aria-hidden="true">
   <div class="strip-track" id="stripTrack">
     <div class="strip-item"><svg viewBox="0 0 64 18"><path d="M2 3 C 18 17, 46 17, 62 3"/></svg>Σύνθετη Προσθετική</div>
@@ -499,6 +500,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   </div>
 </div>
 
+<!-- ABOUT -->
 <section class="section" id="iatros">
   <div class="container about-grid">
     <div class="about-img reveal">
@@ -509,10 +511,10 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
       </div>
     </div>
     <div class="about-txt">
-      <span class="eyebrow reveal">Η Ιατρός</span>
+      <span class="eyebrow reveal">Η Οδοντίατρος</span>
       <h2 class="reveal d1">Άννα Στριγκόνη</h2>
       <svg class="arc arc-teal reveal d1" viewBox="0 0 64 18" aria-hidden="true"><path d="M2 3 C 18 17, 46 17, 62 3"/></svg>
-      <p class="reveal d2">Η Άννα Στριγκόνη είναι Χειρουργός Οδοντίατρος με εξειδίκευση στην Προσθετική και την Προσθετική Εμφυτευματολογία. Αποφοίτησε από την Οδοντιατρική Σχολή του ΕΚΠΑ το 2018 και, χάρη στην εξαιρετική της επίδοση, εισήχθη στο απαιτητικό μεταπτυχιακό πρόγραμμα ειδίκευσης του ίδιου ιδρύματος.</p>
+      <p class="reveal d2">Η Άννα Στριγκόνη είναι Οδοντίατρος με εξειδίκευση στην Προσθετική και την Προσθετική Εμφυτευματολογία. Αποφοίτησε από την Οδοντιατρική Σχολή του ΕΚΠΑ το 2018 και, χάρη στην εξαιρετική της επίδοση, εισήχθη στο απαιτητικό μεταπτυχιακό πρόγραμμα ειδίκευσης του ίδιου ιδρύματος.</p>
       <p class="reveal d2">Διατηρεί ενεργό ακαδημαϊκή παρουσία ως Επιστημονική Συνεργάτης στο γνωστικό αντικείμενο της Προσθετικής, έχει δημοσιεύσει εργασίες σε έγκριτα οδοντιατρικά περιοδικά και συμμετέχει ως ομιλήτρια σε τοπικά και διεθνή συνέδρια. Στο ιατρείο της, η ακαδημαϊκή γνώση συναντά την τεχνολογία αιχμής — και, πάνω απ' όλα, την ανθρώπινη φροντίδα.</p>
       <div class="creds reveal d3">
         <div class="cred">
@@ -532,17 +534,18 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   </div>
 </section>
 
+<!-- SERVICES -->
 <section class="section services" id="ypiresies">
   <div class="container">
     <div class="services-header-split">
       <div class="section-head" style="margin-bottom:0;">
         <span class="eyebrow reveal">Υπηρεσίες</span>
         <h2 class="reveal d1">Εξειδικευμένη φροντίδα,<br>σε κάθε στάδιο</h2>
-        <p class="reveal d2">Από τη συνολική στοματική αποκατάσταση μέχρι τον προληπτικό καθαρισμό, κάθε θεραπεία σχεδιάζεται εξατομικευμένα — με γνώμονα τη λειτουργία, την αισθητική και τη μακροχρόνια υγεία του χαμόγελού σας.</p>
+        <p class="reveal d2">Από τη συνολική στοματική αποκατάσταση μέχρι τον προληπτικό καθαρισμό, κάθε θεραπεία σχεδιάζεται εξατομικευμένα — με γνώμονα τη λειτουργία, την αισθητική και τη μακροχρόνια υχεσία του χαμόγελού σας.</p>
         
         <div class="trust-item reveal d3" style="margin-top:24px;">
-          <span class="trust-num">45+</span>
-          <span class="trust-label">ΕΞΑΙΡΕΤΙΚΕΣ<br>ΣΥΣΤΑΣΕΙΣ ΑΣΘΕΝΩΝ</span>
+          <span class="trust-num">100%</span>
+          <span class="trust-label">ΕΞΑΤΟΜΙΚΕΥΜΕΝΗ<br>ΦΡΟΝΤΙΔΑ</span>
         </div>
       </div>
       <div class="services-header-img reveal d2">
@@ -570,7 +573,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
       <article class="svc reveal d1">
         <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9z"/><path d="M8 13c1.3 1.3 2.6 2 4 2s2.7-.7 4-2"/><path d="M9 9h.01M15 9h.01"/></svg></div>
         <h3>Κροταφογναθικές Διαταραχές & Διαχείριση Βρυγμού</h3>
-        <p>Το ασυνείδητο σφίξιμο ή τρίξιμο των δοντιών και ο πόνος στην άρθρωση της γνάθου αποτελούν συχνά συμπτώματα κροταφογναθικών διαταραχών. Με βαθιά γνώση της σύγκλεισης, η ιατρός κατασκευάζει εξατομικευμένους νάρθηκες που αποφορτίζουν την άρθρωση, ανακουφίζουν από τους μυϊκούς πόνους και προστατεύουν τα δόντια.</p>
+        <p>Το ασυνείδητο σφίξιμο ή τρίξιμο των δοντιών και ο πόνος στην άρθρωση της γνάθου αποτελούν συχνά συμπτώματα κροταφογναθικών διαταραχών. Με βαθιά γνώση της σύγκλεισης, η οδοντίατρος κατασκευάζει εξατομικευμένους νάρθηκες που αποφορτίζουν την άρθρωση, ανακουφίζουν από τους μυϊκούς πόνους και προστατεύουν τα δόντια.</p>
         <ul class="svc-tags">
           <li>Νάρθηκες Σύγκλεισης</li><li>Διαχείριση Βρυγμού</li><li>Πόνος Άρθρωσης / Μυών</li>
         </ul>
@@ -578,7 +581,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
       <article class="svc reveal d2">
         <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M3 16.5L7 12l3 3 4-5 4 4"/><path d="M12 7v.01"/></svg></div>
         <h3>Προληπτική Οδοντιατρική & Στοματική Υγιεινή</h3>
-        <p>Η διατήρηση ενός υγιούς χαμόγελου ξεκινά από την πρόληψη. Ανώδυνος υπερηχητικός καθαρισμός για την αφαίρεση πέτρας και μικροβιακής πλάκας, στίλβωση για τις επιφανειακές χρωστικές, αντιμετώπιση ουλίτιδας, καθώς και απλές ή χειρουργικές εξαγωγές όταν κριθεί κλινικά απαραίτητο.</p>
+        <p>Η διατήρηση ενός υγιούς χαμόγελού ξεκινά από την πρόληψη. Ανώδυνος υπερηχητικός καθαρισμός για την αφαίρεση πέτρας και μικροβιακής πλάκας, στίλβωση για τις επιφανειακές χρωστικές, αντιμετώπιση ουλίτιδας, καθώς και απλές εξαγωγές όταν κριθεί κλινικά απαραίτητο.</p>
         <ul class="svc-tags">
           <li>Καθαρισμός</li><li>Στίλβωση – Φθορίωση</li><li>Αντιμετώπιση Ουλίτιδας</li><li>Εξαγωγές</li>
         </ul>
@@ -587,6 +590,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   </div>
 </section>
 
+<!-- DIGITAL -->
 <section class="section digital" id="psifiaki">
   <div class="container dig-grid">
     <div class="dig-txt">
@@ -619,6 +623,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   </div>
 </section>
 
+<!-- PHILOSOPHY -->
 <section class="section philo">
   <div class="container">
     <span class="eyebrow reveal">Η Φιλοσοφία μας</span>
@@ -638,7 +643,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
         <h3><svg viewBox="0 0 24 24"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="12" cy="17" r="3"/><path d="M9 9.5l2 4.5M15 9.5l-2 4.5M10 7h4"/></svg>Το δίκτυο των ειδικών</h3>
         <p>Για πράξεις που απαιτούν διαφορετική κλινική κατάρτιση, το ιατρείο συνεργάζεται στενά με κορυφαίους εξωτερικούς συνεργάτες — ένα αυστηρό μοντέλο διεπιστημονικής συνεργασίας με ένα μόνο κριτήριο: το καλύτερο αποτέλεσμα για εσάς.</p>
         <ul>
-          <li>Χειρουργική τοποθέτηση εμφυτευμάτων & προχωρημένη θεραπεία περιοδοντίτιδας από εξειδικευμένο Περιοδοντολόγο / Χειρουργό</li>
+          <li>Τοποθέτηση εμφυτευμάτων & προχωρημένη θεραπεία περιοδοντίτιδας από εξειδικευμένο Περιοδοντολόγο</li>
           <li>Περίπλοκες ενδοδοντικές θεραπείες από εξειδικευμένο Ενδοδοντολόγο, με χρήση μικροσκοπίου</li>
         </ul>
       </div>
@@ -646,6 +651,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   </div>
 </section>
 
+<!-- GALLERY -->
 <section class="section gallery" id="xoros">
   <div class="container">
     <div class="section-head">
@@ -663,18 +669,19 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   </div>
 </section>
 
-<section class="section reviews" id="kritikes">
+<!-- REVIEWS / ΑΞΙΟΛΟΓΗΣΕΙΣ -->
+<section class="section reviews" id="axiologiseis">
   <div class="container">
     <div class="rev-head">
       <div class="section-head" style="margin-bottom:0">
-        <span class="eyebrow reveal">Κριτικές Ασθενών</span>
+        <span class="eyebrow reveal">Αξιολογήσεις Ασθενών</span>
         <h2 class="reveal d1">Όσα λένε για εμάς</h2>
       </div>
       <div class="score-badge reveal d2">
         <span class="didot">10<span style="font-size:24px">/10</span></span>
         <div>
           <span class="stars" style="font-size:16px">★★★★★</span>
-          <span>45+ επαληθευμένες κριτικές<br>doctoranytime</span>
+          <span>Επαληθευμένες Αξιολογήσεις<br>στο doctoranytime</span>
         </div>
       </div>
     </div>
@@ -683,61 +690,142 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
       <div class="car-track" id="carTrack">
         <article class="rev-card">
           <div class="stars">★★★★★</div>
-          <blockquote>«Εξαιρετική επαγγελματίας και άνθρωπος. Ασχολήθηκε πραγματικά με προσοχή και ενδιαφέρον με το πρόβλημα σύγκλισης που αντιμετωπίζω, αφιερώνοντας χρόνο να με ακούσει με υπομονή και να μου εξηγήσει αναλυτικά κάθε απορία. Τη συστήνω ανεπιφύλακτα!»</blockquote>
-          <footer><span class="rev-avatar">Ε</span><div><b>Ερμιόνη</b><span>26 Μαΐου 2026 · 10/10</span></div></footer>
+          <blockquote>«Πέρα απο την καταπληκτική της δουλεια εκανε το ακατόρθωτο, παμε με χαρα οδοντιατρο!»</blockquote>
+          <footer><span class="rev-avatar">Χ</span><div><b>ΧΡΙΣΤΙΝΑ</b><span>10/10 · 5 αξιολογήσεις</span></div></footer>
         </article>
         <article class="rev-card">
           <div class="stars">★★★★★</div>
-          <blockquote>«Για εμένα η καλύτερη οδοντίατρος που έχω επισκεφθεί ποτέ. Επαγγελματίας, τυπική στο ωράριο, κάνει φοβερό και λεπτομερή καθαρισμό, υπομονετική και ήρεμη. Συγχαρητήρια και για τον όμορφο χώρο.»</blockquote>
-          <footer><span class="rev-avatar">Ν</span><div><b>Ναταλία</b><span>17 Απριλίου 2026 · 10/10</span></div></footer>
+          <blockquote>«Εξαιρετική σε όλα! Δε πονεσα καθόλου!»</blockquote>
+          <footer><span class="rev-avatar">I</span><div><b>Ioannis</b><span>10/10 · 5 αξιολογήσεις</span></div></footer>
         </article>
         <article class="rev-card">
           <div class="stars">★★★★★</div>
-          <blockquote>«Πέρα από την καταπληκτική της δουλειά, έκανε το ακατόρθωτο: πάμε με χαρά οδοντίατρο!»</blockquote>
-          <footer><span class="rev-avatar">Χ</span><div><b>Χριστίνα</b><span>06 Ιουνίου 2026 · 10/10</span></div></footer>
-        </article>
-        <article class="rev-card">
-          <div class="stars">★★★★★</div>
-          <blockquote>«Εξαιρετική γιατρός, με πολύ ωραίο τρόπο και αποτέλεσμα. Συμβουλεύει χωρίς να πιέζει και εξηγεί αναλυτικά τις επιλογές του ασθενούς.»</blockquote>
-          <footer><span class="rev-avatar">E</span><div><b>Elisavet</b><span>02 Μαρτίου 2026 · 10/10</span></div></footer>
-        </article>
-        <article class="rev-card">
-          <div class="stars">★★★★★</div>
-          <blockquote>«Best dentist here in Athens! I highly recommend her. I loved her transparency and service.»</blockquote>
-          <footer><span class="rev-avatar">A</span><div><b>Ali</b><span>13 Απριλίου 2026 · 10/10</span></div></footer>
+          <blockquote>«Εξαιρετική επαγγελματίας και άνθρωπος. Ασχολήθηκε πραγματικά με προσοχή και ενδιαφέρον με το πρόβλημα σύγκλισης που αντιμετωπίζω, αφιερώνοντας χρόνο να με ακούσει με υπομονή και να μου εξηγήσει αναλυτικά κάθε απορία που είχα. Από την πρώτη στιγμή ένιωσα εμπιστοσύνη και σιγουριά, καθώς αντιμετώπισε το πρόβλημά μου με σωστό και ουσιαστικό τρόπο. Η συνέπεια, η επιστημονική της κατάρτιση και ο ανθρώπινος τρόπος προσέγγισης κάνουν τη διαφορά. Τη συστήνω ανεπιφύλακτα!»</blockquote>
+          <footer><span class="rev-avatar">Ε</span><div><b>ΕΡΜΙΟΝΗ</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
         </article>
         <article class="rev-card">
           <div class="stars">★★★★★</div>
           <blockquote>«Άψογη, καταρτισμένη, προσιτή. Σου εμπνέει εμπιστοσύνη από το πρώτο ραντεβού.»</blockquote>
-          <footer><span class="rev-avatar">Ν</span><div><b>Ντίνα</b><span>26 Μαΐου 2026 · 10/10</span></div></footer>
+          <footer><span class="rev-avatar">Ν</span><div><b>Ντίνα</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
         </article>
         <article class="rev-card">
           <div class="stars">★★★★★</div>
-          <blockquote>«Εξαιρετική σε όλα! Δεν πόνεσα καθόλου!»</blockquote>
-          <footer><span class="rev-avatar">Ι</span><div><b>Ioannis</b><span>27 Μαΐου 2026 · 10/10</span></div></footer>
+          <blockquote>«Η ΟΔΟΝΤΙΑΤΡΟΣ ΑΣΧΟΛΗΘΗΚΕ ΜΕ ΤΗΝ ΠΕΡΙΠΤΩΣΗ ΜΑΣ, ΗΤΑΝ ΠΟΛΥ ΚΑΘΗΣΥΧΑΣΤΙΚΗ ΚΑΙ ΒΟΗΘΗΤΙΚΗ. ΜΑΣ ΠΡΟΤΕΙΝΕ ΛΥΣΕΙΣ ΚΑΙ ΜΑΣ ΕΝΕΠΝΕΥΣΕ ΕΜΠΙΣΤΟΣΥΝΗ. ΕΥΓΕΝΗΣ ΚΑΙ ΕΠΑΓΓΕΛΜΑΤΙΑΣ.»</blockquote>
+          <footer><span class="rev-avatar">Σ</span><div><b>Σπυριδούλα</b><span>10/10 · 2 αξιολογήσεις</span></div></footer>
         </article>
         <article class="rev-card">
           <div class="stars">★★★★★</div>
-          <blockquote>«Amazing, professional and friendly caring service. Trust was instant! A great dentist with great prices too.»</blockquote>
-          <footer><span class="rev-avatar">J</span><div><b>Johan</b><span>25 Ιανουαρίου 2026 · 10/10</span></div></footer>
+          <blockquote>«Anna is a fantastic practitioner, loves her job, and is a sweet person.»</blockquote>
+          <footer><span class="rev-avatar">M</span><div><b>Mehdi</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
         </article>
         <article class="rev-card">
           <div class="stars">★★★★★</div>
-          <blockquote>«Η γιατρός είναι σχολαστική, εξαιρετικά ικανή σε κάθε τεχνική εργασία, ο χώρος πεντακάθαρος και σε κάνει να νιώθεις άνετα από την πρώτη στιγμή.»</blockquote>
-          <footer><span class="rev-avatar">Χ</span><div><b>Χριστίνα</b><span>22 Απριλίου 2026 · 10/10</span></div></footer>
+          <blockquote>«Η οδοντίατρος ειναι σχολαστικη εξαιρετικά ικανή στον τροπο που διαχειρίζεται καθε τεχνική εργασία, ο χώρος πεντακάθαρος και σε κανει να νιώθεις άνετα απο την πρώτη στιγμή. Τη συστήνω ανεπιφύλακτα ...»</blockquote>
+          <footer><span class="rev-avatar">Χ</span><div><b>Χριστίνα</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Ευγενική, υποστηρικτική και με πολύ σαφής σε ότι έκανε.»</blockquote>
+          <footer><span class="rev-avatar">Α</span><div><b>Ανδρέας</b><span>10/10 · 3 αξιολογήσεις</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Για εμένα η καλύτερη οδοντίατρος που έχω επισκεφθεί ποτέ. Είναι επαγγελματίας, είναι τυπική στο ωράριο, κάνει φοβερό και λεπτομερή καθαρισμό, είναι υπομονετική και ήρεμη. Συγχαρητήρια για τον επαγγελματισμό της και τον όμορφο χώρο που έχει.»</blockquote>
+          <footer><span class="rev-avatar">Ν</span><div><b>Ναταλία</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Best dentist here in Athens! I highly recommend her, if you are foreigner, she is the best! And she won’t take advantage of you because you are foreigner, I loved her transparency and service.»</blockquote>
+          <footer><span class="rev-avatar">A</span><div><b>Ali</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Εξαιρετική οδοντίατρος!!! Με βοήθησε πάρα πολύ . Δεν την αλλάζω πλέον»</blockquote>
+          <footer><span class="rev-avatar">Ά</span><div><b>Άλκηστις</b><span>10/10 · 6 αξιολογήσεις</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Σου εμπνέει εμπιστοσύνη και είναι πολύ καλή στην δουλειά της!!»</blockquote>
+          <footer><span class="rev-avatar">Ν</span><div><b>Νεκταρία</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Εξαιρετική οδοντίατρος, με πολύ ωραίο τρόπο και αποτέλεσμα. Συμβουλεύει χωρίς να πιέζει και εξηγεί αναλυτικά τις επιλογές του ασθενούς.»</blockquote>
+          <footer><span class="rev-avatar">E</span><div><b>Elisavet</b><span>10/10 · 2 αξιολογήσεις</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Ευγενική, καταρτισμένη, εξαιρετική επαγγελματίας»</blockquote>
+          <footer><span class="rev-avatar">Ε</span><div><b>ΕΥΗ</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Amazing , professional and friendly caring service . Trust was instant ! A great dentist with great prices too .»</blockquote>
+          <footer><span class="rev-avatar">J</span><div><b>Johan</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Εξαιρετική οδοντίατρος. Ένιωσα άνετα απευθείας»</blockquote>
+          <footer><span class="rev-avatar">Ά</span><div><b>Άλκηστις</b><span>10/10 · 6 αξιολογήσεις</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Είναι πολύ ευγενική, προσεχτική και επεξηγηματική. Έκανα καθαρισμό και λεύκανση.»</blockquote>
+          <footer><span class="rev-avatar">Ι</span><div><b>ΙΩΑΝΝΑ</b><span>10/10 · 6 αξιολογήσεις</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Εμπνέει εμπιστοσύνη και είναι αρκετά σχολαστική !»</blockquote>
+          <footer><span class="rev-avatar">Β</span><div><b>Βάγιας</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Πολύ καλή οδοντίατρος με βοήθησε πραγματικά»</blockquote>
+          <footer><span class="rev-avatar">D</span><div><b>Dimitris</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Εξαιρετική οδοντίατρος.Τη συνιστώ ανεπιφύλακτα.»</blockquote>
+          <footer><span class="rev-avatar">Χ</span><div><b>Χρύση</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Καταρτισμένη, επεξηγηματική, φιλική, και πολύ όμορφος χώρος!»</blockquote>
+          <footer><span class="rev-avatar">M</span><div><b>Markella</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Είστε εξαιρετική στην δουλειά σας!»</blockquote>
+          <footer><span class="rev-avatar">Α</span><div><b>ΑΝΤΩΝΙΑ</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Πολύ καλή εξυπηρέτηση και γνώση του αντικειμένου.»</blockquote>
+          <footer><span class="rev-avatar">Χ</span><div><b>Χαράλαμπος</b><span>9.6/10 · 2 αξιολογήσεις</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Ωραίο, προσεγμένο, καθαρό ιατρείο. Πολύ καλή οδοντίατρος, ευγενική και καταρτισμένη.»</blockquote>
+          <footer><span class="rev-avatar">Κ</span><div><b>Κατερίνα</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
+        </article>
+        <article class="rev-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Πολύ Καλή!!!! εξειδικευμένη οδοντίατρος με βαθειά γνώση στο αντικείμενο..έκανα καθαρισμό και έμεινα απόλυτα ικανοποιημένη.Το ιατρείο πολύ προσεγμένο και κυρίως πολύ καθαρός και όμορφος χώρος»</blockquote>
+          <footer><span class="rev-avatar">Χ</span><div><b>Χριστίνα</b><span>10/10 · 1 αξιολόγηση</span></div></footer>
         </article>
       </div>
       <div class="car-ctrl">
         <div class="car-arrows">
-          <button class="car-btn" id="carPrev" aria-label="Προηγούμενες κριτικές"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
-          <button class="car-btn" id="carNext" aria-label="Επόμενες κριτικές"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+          <button class="car-btn" id="carPrev" aria-label="Προηγούμενες αξιολογήσεις"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="car-btn" id="carNext" aria-label="Επόμενες αξιολογήσεις"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
         </div>
-        <a class="rev-more" href="https://www.doctoranytime.gr/d/Odontiatros/strigkoni-anna#review-section" target="_blank" rel="noopener">Διαβάστε όλες τις κριτικές στο doctoranytime →</a>
+        <a class="rev-more" href="https://www.doctoranytime.gr/d/Odontiatros/strigkoni-anna#review-section" target="_blank" rel="noopener">Διαβάστε όλες τις αξιολογήσεις στο doctoranytime →</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section class="section contact" id="epikoinonia">
   <div class="container">
     <div class="ct-grid">
@@ -773,20 +861,21 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="ft-grid">
       <div class="ft-brand">
         <img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-18.jpg" alt="All Smiles Dental Clinic">
-        <p>Άννα Στριγκόνη — Χειρουργός Οδοντίατρος, MSc Προσθετικής & Προσθετικής Εμφυτευματολογίας ΕΚΠΑ.</p>
+        <p>Άννα Στριγκόνη — Οδοντίατρος, MSc Προσθετικής & Προσθετικής Εμφυτευματολογίας ΕΚΠΑ.</p>
       </div>
       <div class="ft-col">
         <b>Πλοήγηση</b>
-        <a href="#iatros">Η Ιατρός</a>
+        <a href="#iatros">Η Οδοντίατρος</a>
         <a href="#ypiresies">Υπηρεσίες</a>
         <a href="#psifiaki">Ψηφιακή Οδοντιατρική</a>
         <a href="#xoros">Ο Χώρος</a>
-        <a href="#kritikes">Κριτικές</a>
+        <a href="#axiologiseis">Αξιολογήσεις</a>
       </div>
       <div class="ft-col">
         <b>Υπηρεσίες</b>
