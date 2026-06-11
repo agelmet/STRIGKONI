@@ -134,7 +134,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 }
 .btn-line{border-color:rgba(43,37,30,.25);color:var(--ink);background:transparent}
 .btn-line:hover{border-color:var(--dental-blue);color:var(--dental-blue); box-shadow:var(--dental-glow);}
-.btn-ivory{background:var(--ivory);color(--ink)}
+.btn-ivory{background:var(--ivory);color:var(--ink)}
 .btn-ivory:hover{background:var(--dental-teal);color:#fff;transform:translateY(-2px); box-shadow:var(--dental-glow);}
 .nav-cta{display:inline-flex}
 .burger{display:none;background:none;border:0;cursor:pointer;width:42px;height:42px;position:relative;z-index:210}
@@ -209,7 +209,8 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(36px,5.5vw,76px);align-items:center}
 .about-img{position:relative; animation: float 6s ease-in-out infinite;}
-.about-img img{border-radius:var(--radius);box-shadow:var(--dental-glow);aspect-ratio:4/4.6;object-fit:cover;width:100%; border: 3px solid #fff;}
+/* True to size - Not Cropped styling */
+.about-img img{border-radius:var(--radius);box-shadow:var(--dental-glow);width:100%; height:auto; object-fit:contain; border: 3px solid #fff;}
 .about-img::before{
   content:"";position:absolute;inset:-22px auto auto -22px;width:62%;height:62%;
   border:2px dashed var(--dental-teal);border-radius:var(--radius);z-index:-1;
@@ -504,7 +505,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 <section class="section" id="iatros">
   <div class="container about-grid">
     <div class="about-img reveal">
-      <img src="https://cdn.doctoranytime.gr/profileimages/b0ad6297-bd14-4273-baa5-e094922985ac.jpg" alt="Άννα Στριγκόνη" loading="lazy">
+      <img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/strigkoni-anna_01.jpg" alt="Άννα Στριγκόνη" loading="lazy">
       <div class="about-badge">
         <span class="didot">2018</span>
         <span>Απόφοιτη Οδοντιατρικής<br>Σχολής ΕΚΠΑ</span>
@@ -541,7 +542,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
       <div class="section-head" style="margin-bottom:0;">
         <span class="eyebrow reveal">Υπηρεσίες</span>
         <h2 class="reveal d1">Εξειδικευμένη φροντίδα,<br>σε κάθε στάδιο</h2>
-        <p class="reveal d2">Από τη συνολική στοματική αποκατάσταση μέχρι τον προληπτικό καθαρισμό, κάθε θεραπεία σχεδιάζεται εξατομικευμένα — με γνώμονα τη λειτουργία, την αισθητική και τη μακροχρόνια υχεσία του χαμόγελού σας.</p>
+        <p class="reveal d2">Από τη συνολική στοματική αποκατάσταση μέχρι τον προληπτικό καθαρισμό, κάθε θεραπεία σχεδιάζεται εξατομικευμένα — με γνώμονα τη λειτουργία, την αισθητική και τη μακροχρόνια υγεία του χαμόγελού σας.</p>
         
         <div class="trust-item reveal d3" style="margin-top:24px;">
           <span class="trust-num">100%</span>
@@ -581,7 +582,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
       <article class="svc reveal d2">
         <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M3 16.5L7 12l3 3 4-5 4 4"/><path d="M12 7v.01"/></svg></div>
         <h3>Προληπτική Οδοντιατρική & Στοματική Υγιεινή</h3>
-        <p>Η διατήρηση ενός υγιούς χαμόγελού ξεκινά από την πρόληψη. Ανώδυνος υπερηχητικός καθαρισμός για την αφαίρεση πέτρας και μικροβιακής πλάκας, στίλβωση για τις επιφανειακές χρωστικές, αντιμετώπιση ουλίτιδας, καθώς και απλές εξαγωγές όταν κριθεί κλινικά απαραίτητο.</p>
+        <p>Η διατήρηση ενός υγιούς χαμόγελου ξεκινά από την πρόληψη. Ανώδυνος υπερηχητικός καθαρισμός για την αφαίρεση πέτρας και μικροβιακής πλάκας, στίλβωση για τις επιφανειακές χρωστικές, αντιμετώπιση ουλίτιδας, καθώς και απλές εξαγωγές όταν κριθεί κλινικά απαραίτητο.</p>
         <ul class="svc-tags">
           <li>Καθαρισμός</li><li>Στίλβωση – Φθορίωση</li><li>Αντιμετώπιση Ουλίτιδας</li><li>Εξαγωγές</li>
         </ul>
@@ -617,7 +618,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
       </div>
     </div>
     <figure class="dig-img reveal d2">
-      <img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-17.jpg" alt="Ψηφιακό τρισδιάστατο μοντέλο δοντιών από ενδοστοματικό σαρωτή στην οθόνη" loading="lazy">
+      <img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/strigkoni-anna_10.jpg" alt="Ψηφιακό τρισδιάστατο μοντέλο δοντιών από ενδοστοματικό σαρωτή στην οθόνη" loading="lazy">
       <figcaption>INTRAORAL SCANNER · ΨΗΦΙΑΚΗ ΑΠΟΤΥΠΩΣΗ</figcaption>
     </figure>
   </div>
