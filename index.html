@@ -215,13 +215,6 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   content:"";position:absolute;inset:-22px auto auto -22px;width:62%;height:62%;
   border:2px dashed var(--dental-teal);border-radius:var(--radius);z-index:-1;
 }
-.about-badge{
-  position:absolute;right:-14px;bottom:30px;background:var(--white);border-radius:14px;
-  box-shadow:var(--shadow-card);padding:16px 20px;display:flex;align-items:center;gap:14px;
-  border-left: 4px solid var(--dental-teal);
-}
-.about-badge .didot{font-size:30px;color:var(--dental-teal);line-height:1}
-.about-badge span{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);line-height:1.5}
 .about-txt h2{font-size:clamp(30px,3.4vw,44px);margin-top:16px}
 .about-txt > p{margin-top:18px;color:var(--ink-soft)}
 .creds{margin-top:30px;display:grid;gap:0}
@@ -280,11 +273,6 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 .dig-feat span{font-size:13.8px;color:rgba(251,248,242,.65)}
 .dig-img{position:relative}
 .dig-img img{border-radius:var(--radius);box-shadow:0 30px 70px -20px rgba(2,132,199,.4); border: 2px solid rgba(13,148,136,0.3);}
-.dig-img figcaption{
-  position:absolute;left:18px;bottom:18px;background:rgba(43,37,30,.78);backdrop-filter:blur(8px);
-  color:var(--dental-teal);font-size:12px;font-weight:600;letter-spacing:.08em;padding:9px 16px;border-radius:100px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
 
 /* PHILOSOPHY */
 .philo{background:linear-gradient(to bottom, var(--ivory), #F0F9FF);}
@@ -310,11 +298,6 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
 .gal-item{border-radius:var(--radius);overflow:hidden;position:relative; box-shadow:var(--shadow-card);}
 .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease), filter .5s;}
 .gal-item:hover img{transform:scale(1.08); filter:brightness(1.1);}
-.gal-item figcaption{
-  position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);
-  font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--dental-blue);
-  padding:7px 14px;border-radius:100px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
 .g1{grid-column:span 7;aspect-ratio:16/10}
 .g2{grid-column:span 5;aspect-ratio:4/3.43}
 .g3{grid-column:span 4;aspect-ratio:4/3}
@@ -410,7 +393,6 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   .hero-inner{padding-top:55vh;padding-bottom:48px; max-width: 100%;}
   .rev-card{flex:0 0 100%;margin-right:0}
   .car-track .rev-card{margin-right:18px}
-  .about-badge{right:8px; bottom: 15px;}
   .g3,.g4{grid-column:span 12;aspect-ratio:16/10}
 }
 </style>
@@ -480,7 +462,7 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
         </div>
         <div class="trust-item">
           <span class="trust-num">ΕΚΠΑ</span>
-          <span class="trust-label">Επιστημονική<br>Συνεργάτης Προσθετικής</span>
+          <span class="trust-label">Επιστημονική Συνεργάτης<br>Τμήματος Προσθετικής</span>
         </div>
       </div>
     </div>
@@ -502,10 +484,6 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
   <div class="container about-grid">
     <div class="about-img reveal">
       <img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/strigkoni-anna_01.jpg" alt="Άννα Στριγκόνη" loading="lazy">
-      <div class="about-badge">
-        <span class="didot">2018</span>
-        <span>Απόφοιτη Οδοντιατρικής<br>Σχολής ΕΚΠΑ</span>
-      </div>
     </div>
     <div class="about-txt">
       <span class="eyebrow reveal">Η Οδοντίατρος</span>
@@ -515,16 +493,16 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
       <p class="reveal d2">Διατηρεί ενεργό ακαδημαϊκή παρουσία ως Επιστημονική Συνεργάτης στο γνωστικό αντικείμενο της Προσθετικής, έχει δημοσιεύσει εργασίες σε έγκριτα οδοντιατρικά περιοδικά και συμμετέχει ως ομιλήτρια σε τοπικά και διεθνή συνέδρια. Στο ιατρείο της, η ακαδημαϊκή γνώση συναντά την τεχνολογία αιχμής — και, πάνω απ' όλα, την ανθρώπινη φροντίδα.</p>
       <div class="creds reveal d3">
         <div class="cred">
-          <span class="cred-year">2018</span>
-          <div><b>Πτυχίο Οδοντιατρικής, ΕΚΠΑ</b><span>Οδοντιατρική Σχολή Εθνικού & Καποδιστριακού Πανεπιστημίου Αθηνών</span></div>
+          <span class="cred-year">Σήμερα</span>
+          <div><b>Επιστημονική Συνεργάτης ΕΚΠΑ</b><span>Γνωστικό αντικείμενο Προσθετικής · Δημοσιεύσεις & ομιλίες σε διεθνή συνέδρια</span></div>
         </div>
         <div class="cred">
           <span class="cred-year">MSc</span>
           <div><b>Μεταπτυχιακή Ειδίκευση</b><span>Προσθετική & Προσθετική Εμφυτευματολογία, ΕΚΠΑ</span></div>
         </div>
         <div class="cred">
-          <span class="cred-year">Σήμερα</span>
-          <div><b>Επιστημονική Συνεργάτης ΕΚΠΑ</b><span>Γνωστικό αντικείμενο Προσθετικής · Δημοσιεύσεις & ομιλίες σε διεθνή συνέδρια</span></div>
+          <span class="cred-year">2018</span>
+          <div><b>Πτυχίο Οδοντιατρικής, ΕΚΠΑ</b><span>Οδοντιατρική Σχολή Εθνικού & Καποδιστριακού Πανεπιστημίου Αθηνών</span></div>
         </div>
       </div>
     </div>
@@ -613,7 +591,6 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
     </div>
     <figure class="dig-img reveal d2">
       <img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/strigkoni-anna_10.jpg" alt="Ψηφιακό τρισδιάστατο μοντέλο δοντιών από ενδοστοματικό σαρωτή στην οθόνη" loading="lazy">
-      <figcaption>INTRAORAL SCANNER · ΨΗΦΙΑΚΗ ΑΠΟΤΥΠΩΣΗ</figcaption>
     </figure>
   </div>
 </section>
@@ -653,11 +630,11 @@ h1,h2,h3,.didot{font-family:var(--font-display);font-weight:400;line-height:1.18
       <p class="reveal d2">Φωτεινό, ζεστό και πεντακάθαρο — σχεδιασμένο για να αφήνετε το άγχος στην πόρτα. Όπως γράφει και μια ασθενής μας: «πάμε με χαρά οδοντίατρο!»</p>
     </div>
     <div class="gal-grid">
-      <figure class="gal-item g1 reveal"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-13.jpg" alt="Ο χώρος θεραπείας με τη σύγχρονη οδοντιατρική έδρα" loading="lazy"><figcaption>Χώρος Θεραπείας</figcaption></figure>
-      <figure class="gal-item g2 reveal d1"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-16.jpg" alt="Η οδοντιατρική έδρα του ιατρείου από κοντά" loading="lazy"><figcaption>Σύγχρονος Εξοπλισμός</figcaption></figure>
-      <figure class="gal-item g3 reveal"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-14.jpg" alt="Ο χώρος αναμονής με άνετους καναπέδες" loading="lazy"><figcaption>Χώρος Αναμονής</figcaption></figure>
-      <figure class="gal-item g4 reveal d1"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-19.jpg" alt="Το γραφείο συνεννόησης με τους ασθενείς" loading="lazy"><figcaption>Χώρος Συνεννόησης</figcaption></figure>
-      <figure class="gal-item g5 reveal d2"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-12.jpg" alt="Η είσοδος και η υποδοχή του All Smiles Dental Clinic" loading="lazy"><figcaption>Υποδοχή</figcaption></figure>
+      <figure class="gal-item g1 reveal"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-13.jpg" alt="Ο χώρος θεραπείας με τη σύγχρονη οδοντιατρική έδρα" loading="lazy"></figure>
+      <figure class="gal-item g2 reveal d1"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-16.jpg" alt="Η οδοντιατρική έδρα του ιατρείου από κοντά" loading="lazy"></figure>
+      <figure class="gal-item g3 reveal"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-14.jpg" alt="Ο χώρος αναμονής με άνετους καναπέδες" loading="lazy"></figure>
+      <figure class="gal-item g4 reveal d1"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-19.jpg" alt="Το γραφείο συνεννόησης με τους ασθενείς" loading="lazy"></figure>
+      <figure class="gal-item g5 reveal d2"><img src="https://raw.githubusercontent.com/agelmet/STRIGKONI/refs/heads/main/unnamed-12.jpg" alt="Η είσοδος και η υποδοχή του All Smiles Dental Clinic" loading="lazy"></figure>
     </div>
   </div>
 </section>
